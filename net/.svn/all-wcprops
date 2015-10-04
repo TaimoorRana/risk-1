@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/p/inf585risk/code/!svn/ver/870/net
+END
+country_serialize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/p/inf585risk/code/!svn/ver/806/net/country_serialize.cpp
+END
+server.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/p/inf585risk/code/!svn/ver/835/net/server.h
+END
+FenClient.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/p/inf585risk/code/!svn/ver/465/net/FenClient.h
+END
+move_serialize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/p/inf585risk/code/!svn/ver/806/net/move_serialize.cpp
+END
+client.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/p/inf585risk/code/!svn/ver/870/net/client.cpp
+END
+army_serialize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/p/inf585risk/code/!svn/ver/806/net/army_serialize.cpp
+END
+card_serialize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/p/inf585risk/code/!svn/ver/806/net/card_serialize.cpp
+END
+game_state_serialize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/p/inf585risk/code/!svn/ver/805/net/game_state_serialize.cpp
+END
+initial_settings_serialize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/p/inf585risk/code/!svn/ver/805/net/initial_settings_serialize.cpp
+END
+objective_serialize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/p/inf585risk/code/!svn/ver/806/net/objective_serialize.cpp
+END
+step_serialize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/p/inf585risk/code/!svn/ver/806/net/step_serialize.cpp
+END
+client.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/p/inf585risk/code/!svn/ver/835/net/client.h
+END
+mainclient.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/p/inf585risk/code/!svn/ver/812/net/mainclient.cpp
+END
+FenServeur.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/p/inf585risk/code/!svn/ver/629/net/FenServeur.cpp
+END
+global_settings_serialize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/p/inf585risk/code/!svn/ver/805/net/global_settings_serialize.cpp
+END
+FenServeur.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/p/inf585risk/code/!svn/ver/587/net/FenServeur.h
+END
+client.pro
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/p/inf585risk/code/!svn/ver/830/net/client.pro
+END
+change_cards_move_serialize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/inf585risk/code/!svn/ver/806/net/change_cards_move_serialize.cpp
+END
+interfaceEngineNetwork.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/p/inf585risk/code/!svn/ver/451/net/interfaceEngineNetwork.cpp
+END
+mainserveur.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/p/inf585risk/code/!svn/ver/830/net/mainserveur.cpp
+END
+continent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/p/inf585risk/code/!svn/ver/453/net/continent.cpp
+END
+dispatch_step_serialize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/p/inf585risk/code/!svn/ver/806/net/dispatch_step_serialize.cpp
+END
+FenClient.ui
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/p/inf585risk/code/!svn/ver/487/net/FenClient.ui
+END
+attack_move_serialize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/p/inf585risk/code/!svn/ver/806/net/attack_move_serialize.cpp
+END
+displacement_move_serialize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/inf585risk/code/!svn/ver/806/net/displacement_move_serialize.cpp
+END
+server.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/p/inf585risk/code/!svn/ver/870/net/server.cpp
+END
+FenClient.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/p/inf585risk/code/!svn/ver/813/net/FenClient.cpp
+END
+continent_serialize.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/p/inf585risk/code/!svn/ver/806/net/continent_serialize.cpp
+END
+Client.ui
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/p/inf585risk/code/!svn/ver/870/net/Client.ui
+END
+serveur.pro
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/p/inf585risk/code/!svn/ver/812/net/serveur.pro
+END

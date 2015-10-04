@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/p/inf585risk/code/!svn/ver/876/ai1
+END
+evaluate.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/p/inf585risk/code/!svn/ver/845/ai1/evaluate.h
+END
+player_ai1.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/p/inf585risk/code/!svn/ver/849/ai1/player_ai1.h
+END
+attack.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/p/inf585risk/code/!svn/ver/849/ai1/attack.h
+END
+ai1_engine.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/p/inf585risk/code/!svn/ver/769/ai1/ai1_engine.cpp
+END
+random_reinforcement.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/p/inf585risk/code/!svn/ver/876/ai1/random_reinforcement.cpp
+END
+dispatch_move_ai.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/p/inf585risk/code/!svn/ver/853/ai1/dispatch_move_ai.h
+END
+ai1_engine.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/p/inf585risk/code/!svn/ver/763/ai1/ai1_engine.h
+END
+random_reinforcement.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/p/inf585risk/code/!svn/ver/853/ai1/random_reinforcement.h
+END
+evaluate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/p/inf585risk/code/!svn/ver/845/ai1/evaluate.cpp
+END
+player_ai1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/p/inf585risk/code/!svn/ver/849/ai1/player_ai1.cpp
+END
+attack.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/p/inf585risk/code/!svn/ver/849/ai1/attack.cpp
+END
+prob_state.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/p/inf585risk/code/!svn/ver/769/ai1/prob_state.h
+END
+nbtriangles.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/p/inf585risk/code/!svn/ver/750/ai1/nbtriangles.cpp
+END

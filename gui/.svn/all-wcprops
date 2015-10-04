@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/p/inf585risk/code/!svn/ver/837/gui
+END
+battleresults.ui
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/p/inf585risk/code/!svn/ver/778/gui/battleresults.ui
+END
+gui.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/p/inf585risk/code/!svn/ver/756/gui/gui.h
+END
+missionbox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/p/inf585risk/code/!svn/ver/658/gui/missionbox.cpp
+END
+yesnodialogbox.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/p/inf585risk/code/!svn/ver/701/gui/yesnodialogbox.h
+END
+battleresults.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/p/inf585risk/code/!svn/ver/778/gui/battleresults.cpp
+END
+battleresultsintermediate.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/p/inf585risk/code/!svn/ver/778/gui/battleresultsintermediate.h
+END
+infobox.ui
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/p/inf585risk/code/!svn/ver/349/gui/infobox.ui
+END
+attackshow.ui
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/p/inf585risk/code/!svn/ver/790/gui/attackshow.ui
+END
+joinbox.ui
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/p/inf585risk/code/!svn/ver/755/gui/joinbox.ui
+END
+battledisplay.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/p/inf585risk/code/!svn/ver/223/gui/battledisplay.h
+END
+form.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/p/inf585risk/code/!svn/ver/289/gui/form.h
+END
+dialogbox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/p/inf585risk/code/!svn/ver/782/gui/dialogbox.cpp
+END
+countrygui.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/p/inf585risk/code/!svn/ver/486/gui/countrygui.cpp
+END
+infobox.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/p/inf585risk/code/!svn/ver/349/gui/infobox.h
+END
+createbox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/p/inf585risk/code/!svn/ver/755/gui/createbox.cpp
+END
+attackshow.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/p/inf585risk/code/!svn/ver/790/gui/attackshow.h
+END
+joinbox.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/p/inf585risk/code/!svn/ver/755/gui/joinbox.h
+END
+attackbox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/p/inf585risk/code/!svn/ver/822/gui/attackbox.cpp
+END
+cardbox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/p/inf585risk/code/!svn/ver/344/gui/cardbox.cpp
+END
+gui.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/p/inf585risk/code/!svn/ver/585/gui/gui.cpp
+END
+missionbox.ui
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/p/inf585risk/code/!svn/ver/821/gui/missionbox.ui
+END
+yesnodialogbox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/p/inf585risk/code/!svn/ver/701/gui/yesnodialogbox.cpp
+END
+battleresultsintermediate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/p/inf585risk/code/!svn/ver/778/gui/battleresultsintermediate.cpp
+END
+mapbox.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/p/inf585risk/code/!svn/ver/349/gui/mapbox.h
+END
+dices.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/p/inf585risk/code/!svn/ver/596/gui/dices.h
+END
+form.ui
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/p/inf585risk/code/!svn/ver/105/gui/form.ui
+END
+missionbox.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/p/inf585risk/code/!svn/ver/658/gui/missionbox.h
+END
+battledisplay.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/p/inf585risk/code/!svn/ver/463/gui/battledisplay.cpp
+END
+battleresults.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/p/inf585risk/code/!svn/ver/778/gui/battleresults.h
+END
+form.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/p/inf585risk/code/!svn/ver/289/gui/form.cpp
+END
+dialogbox.ui
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/p/inf585risk/code/!svn/ver/782/gui/dialogbox.ui
+END
+infobox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/p/inf585risk/code/!svn/ver/486/gui/infobox.cpp
+END
+createbox.ui
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/p/inf585risk/code/!svn/ver/592/gui/createbox.ui
+END
+attackshow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/p/inf585risk/code/!svn/ver/790/gui/attackshow.cpp
+END
+joinbox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/p/inf585risk/code/!svn/ver/837/gui/joinbox.cpp
+END
+attackbox.ui
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/p/inf585risk/code/!svn/ver/791/gui/attackbox.ui
+END
+dialogbox.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/p/inf585risk/code/!svn/ver/782/gui/dialogbox.h
+END
+countrygui.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/p/inf585risk/code/!svn/ver/346/gui/countrygui.h
+END
+cardbox.ui
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/p/inf585risk/code/!svn/ver/346/gui/cardbox.ui
+END
+createbox.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/p/inf585risk/code/!svn/ver/755/gui/createbox.h
+END
+yesnodialogbox.ui
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/p/inf585risk/code/!svn/ver/701/gui/yesnodialogbox.ui
+END
+dices.ui
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/p/inf585risk/code/!svn/ver/596/gui/dices.ui
+END
+battleresultsintermediate.ui
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/p/inf585risk/code/!svn/ver/778/gui/battleresultsintermediate.ui
+END
+attackbox.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/p/inf585risk/code/!svn/ver/791/gui/attackbox.h
+END
+mapbox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/p/inf585risk/code/!svn/ver/486/gui/mapbox.cpp
+END
+dices.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/p/inf585risk/code/!svn/ver/792/gui/dices.cpp
+END
+cardbox.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/p/inf585risk/code/!svn/ver/344/gui/cardbox.h
+END

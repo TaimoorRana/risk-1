@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/p/inf585risk/code/!svn/ver/832/engine
+END
+game.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/p/inf585risk/code/!svn/ver/542/engine/game.hpp
+END
+game.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/p/inf585risk/code/!svn/ver/823/engine/game.h
+END
+o1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/p/inf585risk/code/!svn/ver/313/engine/o1.cpp
+END
+objective.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/p/inf585risk/code/!svn/ver/338/engine/objective.h
+END
+abstract_objectives.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/p/inf585risk/code/!svn/ver/714/engine/abstract_objectives.cpp
+END
+globalSettings.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/p/inf585risk/code/!svn/ver/328/engine/globalSettings.cpp
+END
+map.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/p/inf585risk/code/!svn/ver/685/engine/map.hpp
+END
+o1.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/p/inf585risk/code/!svn/ver/313/engine/o1.h
+END
+abstract_objectives.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/p/inf585risk/code/!svn/ver/711/engine/abstract_objectives.h
+END
+globalSettings.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/p/inf585risk/code/!svn/ver/473/engine/globalSettings.h
+END
+neigh.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/p/inf585risk/code/!svn/ver/27/engine/neigh.txt
+END
+attack_move.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/p/inf585risk/code/!svn/ver/504/engine/attack_move.cpp
+END
+Country.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/p/inf585risk/code/!svn/ver/27/engine/Country.txt
+END
+continent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/p/inf585risk/code/!svn/ver/270/engine/continent.cpp
+END
+player.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/p/inf585risk/code/!svn/ver/685/engine/player.hpp
+END
+attack_move.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/p/inf585risk/code/!svn/ver/507/engine/attack_move.h
+END
+country.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/p/inf585risk/code/!svn/ver/339/engine/country.cpp
+END
+deck.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/p/inf585risk/code/!svn/ver/461/engine/deck.cpp
+END
+Attack.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/p/inf585risk/code/!svn/ver/505/engine/Attack.cpp
+END
+army.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/p/inf585risk/code/!svn/ver/268/engine/army.cpp
+END
+game.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/p/inf585risk/code/!svn/ver/832/engine/game.cpp
+END
+objective.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/p/inf585risk/code/!svn/ver/287/engine/objective.cpp
+END
+deck.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/p/inf585risk/code/!svn/ver/184/engine/deck.h
+END
+attack.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/p/inf585risk/code/!svn/ver/602/engine/attack.h
+END
+map.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/p/inf585risk/code/!svn/ver/274/engine/map.cpp
+END

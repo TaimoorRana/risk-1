@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/p/inf585risk/code/!svn/ver/839/shared_structures
+END
+global_settings.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/inf585risk/code/!svn/ver/823/shared_structures/global_settings.h
+END
+base_player.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/p/inf585risk/code/!svn/ver/816/shared_structures/base_player.cpp
+END
+base_player.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/p/inf585risk/code/!svn/ver/816/shared_structures/base_player.h
+END
+moves.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/p/inf585risk/code/!svn/ver/816/shared_structures/moves.h
+END
+continent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/p/inf585risk/code/!svn/ver/823/shared_structures/continent.cpp
+END
+country.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/p/inf585risk/code/!svn/ver/823/shared_structures/country.cpp
+END
+steps.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/p/inf585risk/code/!svn/ver/823/shared_structures/steps.h
+END
+continent.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/p/inf585risk/code/!svn/ver/818/shared_structures/continent.h
+END
+country.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/p/inf585risk/code/!svn/ver/818/shared_structures/country.h
+END
+army.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/p/inf585risk/code/!svn/ver/823/shared_structures/army.cpp
+END
+initial_settings.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/inf585risk/code/!svn/ver/823/shared_structures/initial_settings.cpp
+END
+game_state.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/p/inf585risk/code/!svn/ver/823/shared_structures/game_state.cpp
+END
+card.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/p/inf585risk/code/!svn/ver/823/shared_structures/card.cpp
+END
+objective.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/p/inf585risk/code/!svn/ver/823/shared_structures/objective.cpp
+END
+army.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/p/inf585risk/code/!svn/ver/823/shared_structures/army.h
+END
+initial_settings.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/inf585risk/code/!svn/ver/839/shared_structures/initial_settings.h
+END
+game_state.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/p/inf585risk/code/!svn/ver/823/shared_structures/game_state.h
+END
+card.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/p/inf585risk/code/!svn/ver/818/shared_structures/card.h
+END
+objective.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/p/inf585risk/code/!svn/ver/823/shared_structures/objective.h
+END
+global_settings.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/p/inf585risk/code/!svn/ver/839/shared_structures/global_settings.cpp
+END

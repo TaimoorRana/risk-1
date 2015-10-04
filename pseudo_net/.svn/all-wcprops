@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/p/inf585risk/code/!svn/ver/837/pseudo_net
+END
+fake_client.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/p/inf585risk/code/!svn/ver/681/pseudo_net/fake_client.h
+END
+server_utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/p/inf585risk/code/!svn/ver/819/pseudo_net/server_utils.h
+END
+client_utils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/p/inf585risk/code/!svn/ver/837/pseudo_net/client_utils.cpp
+END
+client_utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/p/inf585risk/code/!svn/ver/837/pseudo_net/client_utils.h
+END
+fake_client.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/p/inf585risk/code/!svn/ver/660/pseudo_net/fake_client.cpp
+END
+server_utils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/p/inf585risk/code/!svn/ver/837/pseudo_net/server_utils.cpp
+END

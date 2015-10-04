@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>data/standard_risk_configurations.dat</file>
+    </qresource>
+</RCC>
