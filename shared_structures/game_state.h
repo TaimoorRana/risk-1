@@ -1,78 +1,75 @@
 #ifndef GAME_STATE_H
 #define GAME_STATE_H
 
+#include <list>
 #include <map>
 #include <set>
 #include <stack>
-#include <list>
 
 #include "steps.h"
 
-using namespace std;
 
-class Player; //forward declaration
-class Country; //forward declaration
-class Continent; //forward declaration
-class Card; //forward declaration
-class Army; //forward declaration
-class Global_Settings; //forward declaration
-class Initial_Settings; //forward declaration
+class Player;
+class Country;
+class Card;
+class Army;
+class GlobalSettings;
+class InitialSettings;
 
-class Game_State
-{
+class GameState{
 
 public:
 
-    Game_State();
+    GameState();
 
-    Game_State(Initial_Settings* initial_settings);
+    GameState(InitialSettings* initial_settings);
 
-    Army* get_army (Country* coutry);
-
-    Player* owner (Country * country);
-
-    list<Country*> countries_owned_by (Player* player);
-
-    Step* get_current_step ();
     void set_step (Step* new_step);
 
-    Player* get_current_player ();
-    void set_player (Player* new_player);
-
-    set <Card*> get_hand (Player* player);
-
-//    Player* get_next_player ();
-
-    Global_Settings* get_global_settings();
-
-    Initial_Settings* get_initial_settings();
-
-    map <Player*, Player*> get_defeated_players();
+    void set_current_player (Player* current_player);
 
     void add_into_defeated (Player* defeated, Player* conqueror);
 
-    int get_reward_index();
-
-    void update_reward_index(Global_Settings *gs);
+    void update_reward_index(GlobalSettings *global_settings);
 
     void draw(Player* player);
 
-    map <Player*, set<Card*> > get_hands();
+    Army* get_army (Country* coutry) const;
+
+    Player* owner (Country * country) const;
+
+    std::list<Country*> countries_owned_by (Player* player) const;
+
+    Step* get_current_step () const;
+    
+    Player* get_current_player () const;
+
+    std::set<Card*> get_hand (Player* player) const;
+
+    GlobalSettings* get_global_settings() const;
+
+    InitialSettings* get_initial_settings() const;
+
+    std::map<Player*, Player*> get_defeated_players() const;
+
+    int get_reward_index() const;
+
+    std::map<Player*, std::set<Card*> > get_hands() const;
 
 private:
 
-    Global_Settings* global_settings;
-    Initial_Settings* initial_settings;
+    GlobalSettings* global_settings_;
+    InitialSettings* initial_settings_;
 
-    Player* current_player;
-    Step* current_step;
+    Player* current_player_;
+    Step* current_step_;
 
-    map <Country*, Army*> current_armies;
-    map <Player*, set<Card*> > hands;
-    map <Player*, Player*> was_defeated_by;
-    stack <Card*> deck;
+    std::map <Country*, Army*> current_armies_;
+    std::map <Player*, std::set<Card*> > hands_;
+    std::map <Player*, Player*> was_defeated_by_;
+    std::stack <Card*> deck_;
 
-    int reward_index;
+    int reward_index_;
 };
 
 #endif // GAME_STATE_H

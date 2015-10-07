@@ -1,15 +1,9 @@
 #include "objective.h"
 
-int Objective::get_id()
-{
-    return this->id;
-}
+int Objective::get_id() { return id_; }
 
-string Objective::get_description()
-{
-    return this->description;
-}
+std::string Objective::get_description() { return description_; }
 
-bool Objective::is_accomplished(Game_State *game_state, Player *player){
+bool Objective::is_accomplished(GameState *game_state, Player *player){
     return true;
 }

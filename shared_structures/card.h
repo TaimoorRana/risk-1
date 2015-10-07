@@ -1,14 +1,10 @@
 #ifndef CARD_H
 #define CARD_H
 
-#include <string>
-#include <stdexcept>
 #include <map>
-//#include <QJsonObject>
-//#include <QMap>
-using namespace std;
+#include <string>
 
-class Country; //forward declaration
+class Country;
 
 class Card {
 
@@ -22,29 +18,22 @@ public:
         Undefined
     };
 
-    Symbol get_symbol();
-
     Card(Country* country, Symbol symbol);
 
-    Card* get_card();
+    static Symbol get_symbol(std::string symbol_name) const;
+    static Card* get_card (Country* country) const;
+    static Card* get_card (std::string country_name) const;
 
-    Country* get_country_card();
+    Symbol get_symbol() const;
+    Card* get_card() const;
+    Country* get_country_card() const;
 
-    static Symbol get_symbol(string symbol_name);
-
-    static Card* get_card (Country* country);
-    static Card* get_card (string country_name);
-
-    static map<Country*, Card*> country_to_card;
-    static int quantity_of_cards; // Initialized as zero with command int Card::quantity_of_cards = 0;
-//    QJsonObject serialize(QMap<void*, int> &pointeurMap);
-//    void deserialize(QMap<void*, int> &pointeurMap,QJsonObject json);
 private:
+    static std::map<Country*, Card*> country_to_card_;
 
-    Country* country;
-    Symbol symbol;
-    int id;
-
+    Country* country_;
+    Symbol symbol_;
+    int id_;
 
 };
 

@@ -1,38 +1,19 @@
 #include "country.h"
 
-int Country::quantity_of_countries = 0;
-map <string, Country*> Country::name_to_Country=map <string, Country*>();
-map <int, Country*> Country::id_to_Country=map <int, Country*>();
-
-Country::Country(string name)
-{
-    this->name = name;
-    this->id = ++Country::quantity_of_countries;
-    name_to_Country.insert(pair<string, Country*> (name, this));
-    id_to_Country.insert(pair<int, Country*> (id, this));
+Country::Country(string name) : name_(name) {
+    name_to_Country_[name_] = this;
+    id_ = name_to_Country_.size();
+    id_to_Country[id_] = this;
 }
 
-string Country::get_name()
-{
-    return this->name;
+std::string Country::get_name(){ return name_; }
+
+Country* Country::get_country (std::string country_name){
+    return name_to_Country_[country_name];
 }
 
-Country* Country::get_country (string country_name)
-{
-    return name_to_Country[country_name];
+Country* Country::get_country (int id){
+    return id_to_Country_[id];
 }
 
-Country* Country::get_country (int id)
-{
-    return id_to_Country[id];
-}
-
-int Country::get_id() const
-{
-    return this->id;
-}
-
-string Country::toString ()
-{
-    return this->name;
-}
+int Country::get_id(){ return id_; }

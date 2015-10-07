@@ -1,53 +1,33 @@
 #include "continent.h"
-#include "game_state.h"
+
 #include "army.h"
+#include "game_state.h"
 
-int Continent::quantity_of_continents = 0;
-map <string, Continent*> Continent::name_to_continent=map<string, Continent*>();
-
-Continent::Continent(string name, int troop_bonus)
-{
-    this->name = name;
-    this->troop_bonus = troop_bonus;
-    this->id = ++Continent::quantity_of_continents;
-    Continent::name_to_continent.insert(pair<string, Continent*> (name, this));
+Continent::Continent(std::string name, int troop_bonus) : name_(name), troop_bonus_(troop_bonus){
+    name_to_continent_ [name_] = this;
+    id_ = name_to_continent_.size();
 }
 
-void Continent::add_country (Country* country)
-{
-    countries.insert(country);
+void Continent::add_country (Country* country){
+    countries_.insert(country);
 }
 
-Continent* Continent::get_continent (string continent_name)
-{
-    return name_to_continent[continent_name];
+Continent* Continent::get_continent (std::string name){
+    return name_to_continent_[continent_name];
 }
 
-bool Continent::is_owned_by (Player* player, Game_State* game_state)
-{
-    set<Country*>::iterator it;
-    for (it = countries.begin(); it != countries.end(); ++it){
-        if (game_state->owner((*it)) != player)
-        {
+bool Continent::is_owned_by (Player* player, GameState* GameState){
+    for (Country *country : countries_){
+        if (GameState->owner(country) != player) {
             return false;
         }
     }
     return true;
 }
 
+int Continent::get_troop_bonus (){ return troop_bonus_; }
 
-int Continent::get_troop_bonus ()
-{
-    return this->troop_bonus;
-}
+std::set<Country*> Continent::get_countries () { return countries_; }
 
-set<Country*> Continent::get_countries ()
-{
-    return this->countries;
-}
-
-string Continent::toString()
-{
-    return this->name;
-}
+std::string Continent::get_name() { return name_; }
 

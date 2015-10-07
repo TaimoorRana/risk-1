@@ -1,9 +1,9 @@
 #include "initial_settings.h"
 
-Initial_Settings::Initial_Settings(vector<Player*> all_players, map<Player*, set<Country*> > territories, map<Player*,Objective*> players_objectives, Dispatch_Step step)
-{
-    this->all_players = all_players;
-    this->territories = territories;
-    this->players_objectives = players_objectives;
-    this->step = step;
+InitialSettings::InitialSettings(std::vector<Player*> all_players, std::map<Player*, std::set<Country*> > territories, 
+								std::map<Player*,Objective*> players_objectives, Dispatch_Step step) :
+								all_players_(all_players),
+								territories_(territories),
+								players_objectives_(players_objectives),
+								step_(step) {
 }

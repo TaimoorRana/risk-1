@@ -1,73 +1,52 @@
-#include <map>
-#include <set>
-#include <vector>
-#include <string>
-
 #include "game_state.h"
+
+#include <string>
+#include <vector>
+
 #include "army.h"
 #include "global_settings.h"
 
+GameState::GameState(){}
 
-Game_State::Game_State(){
-
-}
-
-Game_State::Game_State(Initial_Settings* initial_settings)
-{
-    this->initial_settings = initial_settings;
+GameState::GameState(InitialSettings* initial_settings) : initial_settings_(initial_settings) {
     // . . .
 }
 
 
-Army* Game_State::get_army (Country* coutry)
-{
-    return current_armies[coutry];
+Army* GameState::get_army (Country* coutry){
+    return current_armies_[coutry];
 }
 
-Player* Game_State::owner (Country * country)
-{
-    Army* army = this->get_army(country);
+Player* GameState::owner (Country * country){
+    Army* army = get_army(country);
     return army->get_owner();
 }
 
-list<Country*> Game_State::countries_owned_by (Player* player)
-{
+std::list<Country*> GameState::countries_owned_by (Player* player){
     list<Country*> owned_countries;
-    map <Country*, Army*>::iterator it;
-    for(it = current_armies.begin(); it != current_armies.end(); it++) {
-        Country* country = it->first;
-        Army* army = it->second;
-        if (army->get_owner() == player)
-        {
+    for(auto const &e : current_armies_) {
+        Country* country = e.first;
+        Army* army = e.second;
+        if (army->get_owner() == player) {
             owned_countries.insert(owned_countries.end(), country);
         }
     }
     return owned_countries;
 }
 
-Step* Game_State::get_current_step ()
-{
-    return this->current_step;
+Step* GameState::get_current_step (){ return current_step_; }
+
+void GameState::set_current_step_ (Step* current_step)
+    current_step_ = current_step;
 }
 
-void Game_State::set_step (Step* new_step)
-{
-    this->current_step = new_step;
+Player* GameState::get_current_player () { return current_player_; }
+
+void GameState::set_current_player (Player* current_player) {
+    current_player_ = current_player;
 }
 
-Player* Game_State::get_current_player ()
-{
-    return this->current_player;
-}
-void Game_State::set_player (Player* new_player)
-{
-    this->current_player = new_player;
-}
-
-set <Card*> Game_State::get_hand (Player* player)
-{
-    return this->hands[player];
-}
+set <Card*> GameState::get_hand (Player* player){ return hands_[player]; }
 
 //    Player* get_next_player ()
 //    {
@@ -82,50 +61,32 @@ set <Card*> Game_State::get_hand (Player* player)
 //    }
 
 
-Global_Settings* Game_State::get_global_settings()
-{
-    return global_settings;
+GlobalSettings* GameState::get_global_settings(){ return global_settings_; }
+
+InitialSettings* GameState::get_initial_settings(){ return initial_settings_; }
+
+std::map <Player*, Player*> GameState::get_defeated_players() { return was_defeated_by_; }
+
+
+void GameState::add_into_defeated (Player* defeated, Player* conqueror){
+    was_defeated_by_[defeated] = conqueror;
 }
 
-Initial_Settings* Game_State::get_initial_settings()
-{
-    return initial_settings;
-}
+int GameState::get_reward_index(){ return reward_index_; }
 
-map <Player*, Player*> Game_State::get_defeated_players()
-{
-    return this->was_defeated_by;
-}
-
-void Game_State::add_into_defeated (Player* defeated, Player* conqueror)
-{
-    this->was_defeated_by.insert(pair<Player*,Player*> (defeated, conqueror));
-}
-
-int Game_State::get_reward_index(){
-    return reward_index;
-}
-
-
-void Game_State::update_reward_index(Global_Settings* gs){
-    int l=gs->get_reward_values().size() - 1;
-    if(reward_index < l)
-    {
-        reward_index++;
-        return;
+void GameState::update_reward_index(GlobalSettings* global_settings){
+    int l = global_settings->get_reward_values().size() - 1;
+    if(reward_index_ < l){
+        ++reward_index_;
     }
-    else
-        return;
 }
 
-void Game_State::draw(Player* player){
-    Card* tmp_card=deck.top();
-    deck.pop();
-    hands[player].insert(tmp_card);
+void GameState::draw(Player* player){
+    Card* tmp_card = deck_.top();
+    deck_.pop();
+    hands_[player].insert(tmp_card);
 }
 
-map <Player*, set<Card*> > Game_State::get_hands(){
-    return hands;
-}
+std::map <Player*, std::set<Card*> > GameState::get_hands(){ return hands_; }
 
 

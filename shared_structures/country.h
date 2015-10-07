@@ -1,40 +1,27 @@
 #ifndef COUNTRY_H
 #define COUNTRY_H
 
-using namespace std;
-
-#include <string>
 #include <map>
+#include <string>
 
-//#include <QJsonObject>
-//#include <QMap>
-
-class Country
-{
+class Country{
 
 public:
 
-    Country(string name);
+    Country(std::string name);
 
-    string get_name();
+    static Country* get_country (std::string country_name) const;
+    static Country* get_country (int id) const;
 
-    static Country* get_country (string country_name);
-
-    static Country* get_country (int id);
-
+    std::string get_name() const;
     int get_id() const;
 
-    string toString ();
-
-    static int quantity_of_countries; // Initialized as zero with command int Country::quantity_of_countries = 0;
-//    QJsonObject serialize(QMap<void*, int> &pointeurMap);
-//    void deserialize(QMap<void*, int> &pointeurMap,QJsonObject json);
 private:
-
-    string name;
-    int id;
-    static map <string, Country*> name_to_Country;
-    static map <int, Country*> id_to_Country;
+    static std::map <std::string, Country*> name_to_Country_;
+    static std::map <int, Country*> id_to_Country_;
+    std::string name_;
+    int id_;
+    
 
 };
 
