@@ -1,12 +1,13 @@
 #ifndef BASE_PLAYER_H
 #define BASE_PLAYER_H
 
-class Base_Player
+class BasePlayer
 {
 public:
-    Base_Player();
-    virtual ~Base_Player();
-    int get_id ();
+    BasePlayer();
+    virtual ~BasePlayer();
+
+    int get_id () const;
     void set_id (int id);
 
     enum Color
@@ -19,13 +20,13 @@ public:
         Blue
     };
 
-    Color get_color();
+    Color get_color() const;
 
     static const char * color_names[];
 
 private:
-    int id;
-    Color color;
+    int id_;
+    Color color_;
 };
 
 #endif // BASE_PLAYER_H

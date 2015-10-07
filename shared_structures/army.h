@@ -8,13 +8,13 @@ class Army {
 
 public:
 
-    Army (Player * owner, int number_of_armies);
+    Army (Player * const owner, int number_of_armies);
 
     void modify_army (int delta_nb_armies);
     void set_number_of_armies (int number_of_armies);
-    void set_owner (Player* owner);
+    void set_owner (Player * const owner);
     //useful when a territory is dominated by another player
-    void conquered_by (Player* new_player, int new_armies, GameState* GameState);
+    void conquered_by (Player * const new_player, int new_armies, GameState * const game_state);
 
     Player* get_owner () const;
     int get_number_of_armies () const;

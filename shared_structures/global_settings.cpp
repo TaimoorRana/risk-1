@@ -89,18 +89,17 @@ GlobalSettings::GlobalSettings(char* data_file_name, std::set<Objective*> object
 }
 
 
-std::set<Country*> GlobalSettings::get_neighbours (Country * country){ 
-    return graph_[country]; 
+std::set<Country*> GlobalSettings::get_neighbours (Country * country) const{
+    return graph_.find(country)->second;
 }
 
 
-std::set<Continent*> GlobalSettings::get_continents () { return continents_; }
+std::set<Continent*> GlobalSettings::get_continents () const { return continents_; }
 
-std::set<Card*> GlobalSettings::get_cards () { return cards_; }
+std::set<Card*> GlobalSettings::get_cards () const { return cards_; }
 
 
-std::set<Country*> GlobalSettings::get_countries()
-{
+std::set<Country*> GlobalSettings::get_countries() const {
     std::set<Country*> all_countries;
     std::set<Continent*> continents = GlobalSettings::get_continents ();
     for (std::set<Continent*>::iterator it = continents.begin(); it != continents.end(); ++it)
@@ -115,8 +114,8 @@ std::set<Country*> GlobalSettings::get_countries()
 }
 
 
-std::set<Objective *> GlobalSettings::get_objectives() { return objectives_; }
+std::set<Objective *> GlobalSettings::get_objectives() const { return objectives_; }
 
-std::vector<int> GlobalSettings::get_reward_values() { return reward_values_; }
+std::vector<int> GlobalSettings::get_reward_values() const { return reward_values_; }
 
-std::map<Country*, std::set<Country*> > GlobalSettings::get_graph () { return graph_; }
+std::map<Country*, std::set<Country*> > GlobalSettings::get_graph () const { return graph_; }

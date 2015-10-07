@@ -10,8 +10,8 @@ public:
 
     Country(std::string name);
 
-    static Country* get_country (std::string country_name) const;
-    static Country* get_country (int id) const;
+    static Country* get_country (std::string country_name);
+    static Country* get_country (int id);
 
     std::string get_name() const;
     int get_id() const;
@@ -22,7 +22,6 @@ private:
     std::string name_;
     int id_;
     
-
 };
 
 #endif // COUNTRY_H

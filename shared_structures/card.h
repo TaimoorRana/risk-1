@@ -18,14 +18,13 @@ public:
         Undefined
     };
 
-    Card(Country* country, Symbol symbol);
+    Card(Country * const country, Symbol const symbol);
 
-    static Symbol get_symbol(std::string symbol_name) const;
-    static Card* get_card (Country* country) const;
-    static Card* get_card (std::string country_name) const;
+    static Symbol get_symbol(std::string const symbol_name);
+    static Card* get_card (Country * const country);
+    static Card* get_card (std::string const country_name);
 
     Symbol get_symbol() const;
-    Card* get_card() const;
     Country* get_country_card() const;
 
 private:

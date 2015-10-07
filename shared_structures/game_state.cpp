@@ -13,17 +13,17 @@ GameState::GameState(InitialSettings* initial_settings) : initial_settings_(init
 }
 
 
-Army* GameState::get_army (Country* coutry){
-    return current_armies_[coutry];
+Army* GameState::get_army (Country* country) const {
+    return current_armies_.find(country)->second;
 }
 
-Player* GameState::owner (Country * country){
+Player* GameState::owner (Country * country) const {
     Army* army = get_army(country);
     return army->get_owner();
 }
 
-std::list<Country*> GameState::countries_owned_by (Player* player){
-    list<Country*> owned_countries;
+std::list<Country*> GameState::countries_owned_by (Player* player) const{
+    std::list<Country*> owned_countries;
     for(auto const &e : current_armies_) {
         Country* country = e.first;
         Army* army = e.second;
@@ -34,19 +34,19 @@ std::list<Country*> GameState::countries_owned_by (Player* player){
     return owned_countries;
 }
 
-Step* GameState::get_current_step (){ return current_step_; }
+Step* GameState::get_current_step () const { return current_step_; }
 
-void GameState::set_current_step_ (Step* current_step)
+void GameState::set_current_step (Step* current_step){
     current_step_ = current_step;
 }
 
-Player* GameState::get_current_player () { return current_player_; }
+Player* GameState::get_current_player () const { return current_player_; }
 
 void GameState::set_current_player (Player* current_player) {
     current_player_ = current_player;
 }
 
-set <Card*> GameState::get_hand (Player* player){ return hands_[player]; }
+std::set<Card*> GameState::get_hand (Player* player) const { return hands_.find(player)->second; }
 
 //    Player* get_next_player ()
 //    {
@@ -61,18 +61,18 @@ set <Card*> GameState::get_hand (Player* player){ return hands_[player]; }
 //    }
 
 
-GlobalSettings* GameState::get_global_settings(){ return global_settings_; }
+GlobalSettings* GameState::get_global_settings() const { return global_settings_; }
 
-InitialSettings* GameState::get_initial_settings(){ return initial_settings_; }
+InitialSettings* GameState::get_initial_settings() const { return initial_settings_; }
 
-std::map <Player*, Player*> GameState::get_defeated_players() { return was_defeated_by_; }
+std::map <Player*, Player*> GameState::get_defeated_players() const { return was_defeated_by_; }
 
 
 void GameState::add_into_defeated (Player* defeated, Player* conqueror){
     was_defeated_by_[defeated] = conqueror;
 }
 
-int GameState::get_reward_index(){ return reward_index_; }
+int GameState::get_reward_index() const { return reward_index_; }
 
 void GameState::update_reward_index(GlobalSettings* global_settings){
     int l = global_settings->get_reward_values().size() - 1;
@@ -87,6 +87,6 @@ void GameState::draw(Player* player){
     hands_[player].insert(tmp_card);
 }
 
-std::map <Player*, std::set<Card*> > GameState::get_hands(){ return hands_; }
+std::map<Player*, std::set<Card*> > GameState::get_hands() const { return hands_; }
 
 

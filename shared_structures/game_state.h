@@ -24,7 +24,7 @@ public:
 
     GameState(InitialSettings* initial_settings);
 
-    void set_step (Step* new_step);
+    void set_current_step (Step* new_step);
 
     void set_current_player (Player* current_player);
 
@@ -34,7 +34,7 @@ public:
 
     void draw(Player* player);
 
-    Army* get_army (Country* coutry) const;
+    Army* get_army (Country* country) const;
 
     Player* owner (Country * country) const;
 

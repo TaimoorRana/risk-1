@@ -4,8 +4,6 @@
 #include <map>
 #include <set>
 
-using namespace std;
-
 class Card;
 class Country;
 
@@ -15,24 +13,24 @@ public:
     //methodes de serialisation/deserialisation
 };
 
-class Change_Cards_Move : public Move{
+class ChangeCardsMove : public Move{
 public:
     std::set<Card*> change_;
 };
 
-class Dispatch_Move : public Move {
+class DispatchMove : public Move {
 public:
     std::map<Country*, int> distribution_;
 };
 
-class Attack_Move : public Move {
+class AttackMove : public Move {
 public:
     Country* origin_;
     Country* destination_;
     int number_of_armies_;
 };
 
-class Displacement_Move : public Move {
+class DisplacementMove : public Move {
 public:
     Country* origin_;
     Country* destination_;

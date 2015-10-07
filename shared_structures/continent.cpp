@@ -13,10 +13,10 @@ void Continent::add_country (Country* country){
 }
 
 Continent* Continent::get_continent (std::string name){
-    return name_to_continent_[continent_name];
+    return name_to_continent_[name];
 }
 
-bool Continent::is_owned_by (Player* player, GameState* GameState){
+bool Continent::is_owned_by (Player* player, GameState* GameState) const{
     for (Country *country : countries_){
         if (GameState->owner(country) != player) {
             return false;
@@ -25,9 +25,9 @@ bool Continent::is_owned_by (Player* player, GameState* GameState){
     return true;
 }
 
-int Continent::get_troop_bonus (){ return troop_bonus_; }
+int Continent::get_troop_bonus () const { return troop_bonus_; }
 
-std::set<Country*> Continent::get_countries () { return countries_; }
+std::set<Country*> Continent::get_countries () const { return countries_; }
 
-std::string Continent::get_name() { return name_; }
+std::string Continent::get_name() const { return name_; }
 

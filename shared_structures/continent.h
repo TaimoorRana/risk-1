@@ -15,7 +15,7 @@ public:
 
     Continent(std::string name, int troop_bonus);
 
-    static Continent* get_continent (std::string name) const;
+    static Continent* get_continent (std::string name);
 
     void add_country (Country* country);
     std::string get_name() const;

@@ -1,31 +1,22 @@
 #include "base_player.h"
 
-Base_Player::Base_Player()
+BasePlayer::BasePlayer()
 {
 
 }
 
-Base_Player::~Base_Player()
+BasePlayer::~BasePlayer()
 {
 
 }
 
-int Base_Player::get_id()
-{
-    return this->id;
-}
+int BasePlayer::get_id() const { return id_; }
 
-void Base_Player::set_id(int id)
-{
-    this->id = id;
-}
+void BasePlayer::set_id(int id) { id_ = id; }
 
-Base_Player::Color Base_Player::get_color()
-{
-    return this->color;
-}
+BasePlayer::Color BasePlayer::get_color() const { return color_; }
 
-const char * Base_Player::color_names[] = {
+const char * BasePlayer::color_names[] = {
     "Yellow",
     "Red",
     "Green",

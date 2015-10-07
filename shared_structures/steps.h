@@ -6,7 +6,7 @@ public:
     int id_;
 };
 
-class Dispatch_Step : public Step {
+class DispatchStep : public Step {
 public:
     int number_of_troops_;
 };

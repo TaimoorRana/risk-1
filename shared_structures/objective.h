@@ -3,10 +3,10 @@
 
 #include <string>
 
-#include "./../shared_structures/objective.h"
-#include "./../shared_structures/game_state.h"
-#include "./../shared_structures/army.h"
-#include "./../shared_structures/global_settings.h"
+#include "army.h"
+#include "objective.h"
+#include "game_state.h"
+#include "global_settings.h"
 #include "./../interfaces/player.h"
 
 class Objective {
