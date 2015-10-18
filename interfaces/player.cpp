@@ -15,8 +15,7 @@ Player::~Player()
 
 }
 
-Player* Player::get_player (InitialSettings *initial_settings, BasePlayer::Color color)
-{
+Player* Player::get_player (InitialSettings *initial_settings, BasePlayer::Color color) {
     std::vector<Player*> players = initial_settings->all_players_;
     for (std::vector<Player*>::iterator it = players.begin(); it!=players.end(); ++it)
     {

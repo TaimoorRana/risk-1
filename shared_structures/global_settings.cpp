@@ -17,23 +17,20 @@ GlobalSettings::GlobalSettings(){
 }
 
 
-GlobalSettings::GlobalSettings(char* data_file_name, std::set<Objective*> objectives) : objectives_(objectives)
-{
+GlobalSettings::GlobalSettings(char* data_file_name, std::set<Objective*> objectives) : objectives_(objectives){
     ifstream data_file;
     data_file.open(data_file_name, ios::in);
 
 
 //    qDebug()<<"File open";
 
-    if (data_file.is_open())
-    {
+    if (data_file.is_open()){
         TextUtils * utils = new TextUtils();
         std::string line;
         getline(data_file, line); // Reading header
 
         // Read Continents and corresponding troop bonus
-        while (getline(data_file, line) && line[0] != '/')
-        {
+        while (getline(data_file, line) && line[0] != '/'){
             utils->remove_empty_spaces(line); // Defined on TextUtils
             std::vector<std::string> splited_line = utils->split(line, '#'); // Defined on TextUtils
 
@@ -45,8 +42,7 @@ GlobalSettings::GlobalSettings(char* data_file_name, std::set<Objective*> object
 
         // Read Countries and corresponding Continents and Symbol
 
-        while (getline(data_file, line) && line[0] != '/')
-        {
+        while (getline(data_file, line) && line[0] != '/'){
             utils->remove_empty_spaces(line); // Defined on TextUtils
             std::vector<std::string> splited_line = utils->split(line, '#'); // Defined on TextUtils
 
@@ -60,8 +56,7 @@ GlobalSettings::GlobalSettings(char* data_file_name, std::set<Objective*> object
         }
 
         // Read Countries and corresponding neighors list
-        while (getline(data_file, line) && line[0] != '/')
-        {
+        while (getline(data_file, line) && line[0] != '/'){
 
             utils->remove_empty_spaces(line); // Defined on TextUtils
 
@@ -78,11 +73,11 @@ GlobalSettings::GlobalSettings(char* data_file_name, std::set<Objective*> object
                 neighbours.insert(neighbour);
             }
         }
-
         data_file.close();
-    }
 
-    else cout << "Error: Unable to open file " << data_file_name;
+    } else {
+        cout << "Error: Unable to open file " << data_file_name;
+    }
 
     // Initializing std::vector<int> reward_values_;
     // ... to be done

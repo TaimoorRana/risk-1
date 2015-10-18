@@ -9,8 +9,8 @@ class InitialSettings;
 class GameState;
 
 
-class Player : public BasePlayer
-{
+class Player : public BasePlayer {
+	
 public:
     Player();
     virtual ~Player();

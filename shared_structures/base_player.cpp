@@ -16,7 +16,7 @@ void BasePlayer::set_id(int id) { id_ = id; }
 
 BasePlayer::Color BasePlayer::get_color() const { return color_; }
 
-const char * BasePlayer::color_names[] = {
+const char * BasePlayer::color_names_[] = {
     "Yellow",
     "Red",
     "Green",

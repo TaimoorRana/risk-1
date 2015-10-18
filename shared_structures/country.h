@@ -4,7 +4,7 @@
 #include <map>
 #include <string>
 
-class Country{
+class Country {
 
 public:
 
@@ -17,8 +17,8 @@ public:
     int get_id() const;
 
 private:
-    static std::map <std::string, Country*> name_to_Country_;
-    static std::map <int, Country*> id_to_Country_;
+    static std::map <std::string, Country*> name_to_country_;
+    static std::map <int, Country*> id_to_country_;
     std::string name_;
     int id_;
     

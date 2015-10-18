@@ -12,11 +12,13 @@ Country* Card::get_country_card() const { return country_; }
 Card::Symbol Card::get_symbol() const { return symbol_; }
 
 Card::Symbol Card::get_symbol(std::string const symbol_name) {
-    if (symbol_name.compare(std::string("Infantry")) == 0) return Card::Infantry;
-    else if (symbol_name.compare(std::string("Cavalry")) == 0) return Card::Cavalry;
-    else if (symbol_name.compare(std::string("Artillery")) == 0) return Card::Artillery;
-    else if (symbol_name.compare(std::string("Joker")) == 0) return Card::Joker;
-    else return Card::Undefined;
+    switch (symbol_name){
+        case "Infantry"  : return Card::Infantry;
+        case "Cavalry"   : return Card::Cavalry;
+        case "Artillery" : return Card::Artillery;
+        case "Joker"     : return Card::Joker;
+    }
+    return Card::Undefined;
 }
 
 Card* Card::get_card (Country * const country){

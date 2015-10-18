@@ -11,7 +11,7 @@ class Card {
 public:
 
     enum Symbol {
-        Infantry,
+        Infantry = 0,
         Artillery,
         Cavalry,
         Joker,

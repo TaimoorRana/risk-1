@@ -1,8 +1,8 @@
 #ifndef BASE_PLAYER_H
 #define BASE_PLAYER_H
 
-class BasePlayer
-{
+class BasePlayer {
+
 public:
     BasePlayer();
     virtual ~BasePlayer();
@@ -22,7 +22,7 @@ public:
 
     Color get_color() const;
 
-    static const char * color_names[];
+    static const char * color_names_[];
 
 private:
     int id_;

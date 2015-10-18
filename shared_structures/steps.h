@@ -11,4 +11,9 @@ public:
     int number_of_troops_;
 };
 
+class EndStep : public Step {
+public:
+    Player * winner_;
+};
+
 #endif // STEPS_H

@@ -5,11 +5,11 @@
 #include <set>
 #include <string>
 
-class Country; //forward declaration
-class Player; //forward declaration
-class GameState; //forward declaration
+class Country;
+class Player;
+class GameState;
 
-class Continent{
+class Continent {
     
 public:
 
