@@ -1,7 +1,7 @@
 #ifndef STEPS_H
 #define STEPS_H
 
-class Step {
+class Step : public Structure {
 public:
     int id_;
 };

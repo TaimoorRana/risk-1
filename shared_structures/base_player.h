@@ -1,7 +1,7 @@
 #ifndef BASE_PLAYER_H
 #define BASE_PLAYER_H
 
-class BasePlayer {
+class BasePlayer : public Structure {
 
 public:
     BasePlayer();

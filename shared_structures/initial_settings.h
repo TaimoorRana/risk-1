@@ -13,7 +13,7 @@ class Country;
 class Objective;
 
 
-class InitialSettings {
+class InitialSettings : public Structure {
 
 public:
     InitialSettings();

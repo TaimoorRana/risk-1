@@ -7,7 +7,7 @@
 class Card;
 class Country;
 
-class Move {
+class Move : public Structure {
 public:
     int id_;
     //methodes de serialisation/deserialisation

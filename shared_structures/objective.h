@@ -9,7 +9,7 @@
 #include "global_settings.h"
 #include "./../interfaces/player.h"
 
-class Objective {
+class Objective : public Structure {
 
 public:
 

@@ -4,7 +4,7 @@
 #include <map>
 #include <string>
 
-class Country {
+class Country : public Structure {
 
 public:
 

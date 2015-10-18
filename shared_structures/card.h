@@ -6,7 +6,7 @@
 
 class Country;
 
-class Card {
+class Card : public Structure {
 
 public:
 

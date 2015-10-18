@@ -16,7 +16,7 @@ class Army;
 class GlobalSettings;
 class InitialSettings;
 
-class GameState {
+class GameState : public Structure {
 
 public:
 

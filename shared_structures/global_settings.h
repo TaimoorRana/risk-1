@@ -10,7 +10,7 @@ class Card;
 class Country;
 class Objective;
 
-class GlobalSettings{
+class GlobalSettings : public Structure {
 
 public:
     GlobalSettings();

@@ -9,7 +9,7 @@ class Country;
 class Player;
 class GameState;
 
-class Continent {
+class Continent : public Structure {
     
 public:
 
