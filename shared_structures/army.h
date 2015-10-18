@@ -4,7 +4,7 @@
 class GameState;
 class Player;
 
-class Army {
+class Army : public Structure {
 
 public:
 
