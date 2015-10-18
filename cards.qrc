@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>cards/riskcardbis.jpg</file>
-        <file>cards/Mission_card_front.jpg</file>
-    </qresource>
-</RCC>
