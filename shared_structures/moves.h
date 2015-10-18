@@ -25,15 +25,15 @@ public:
 
 class AttackMove : public Move {
 public:
-    Country* origin_;
-    Country* destination_;
+    Country *origin_;
+    Country *destination_;
     int number_of_armies_;
 };
 
 class DisplacementMove : public Move {
 public:
-    Country* origin_;
-    Country* destination_;
+    Country *origin_;
+    Country *destination_;
     int number_of_armies_;
 };
 

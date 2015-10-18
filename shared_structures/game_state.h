@@ -61,8 +61,8 @@ private:
     GlobalSettings* global_settings_;
     InitialSettings* initial_settings_;
 
-    Player* current_player_;
-    Step* current_step_;
+    Player *current_player_;
+    Step *current_step_;
 
     std::map <Country*, Army*> current_armies_;
     std::map <Player*, std::set<Card*> > hands_;

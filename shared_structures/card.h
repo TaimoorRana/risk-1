@@ -30,7 +30,7 @@ public:
 private:
     static std::map<Country*, Card*> country_to_card_;
 
-    Country* country_;
+    Country *country_;
     Symbol symbol_;
     int id_;
 

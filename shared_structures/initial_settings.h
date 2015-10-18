@@ -23,7 +23,7 @@ public:
     std::vector<Player*> all_players_; // Players who will join the match
     std::map<Player*, std::set<Country*> > territories_; // Initial territories' distribution
     std::map<Player*,Objective*> players_objectives_;
-    DispatchStep step_;
+    DispatchStep *step_;
 };
 
 #endif // INITIAL_SETTINGS_H

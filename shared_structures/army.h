@@ -20,7 +20,7 @@ public:
     int get_number_of_armies () const;
 
 private:
-    Player* owner_;
+    Player *owner_;
     int number_of_armies_; 
 };
 

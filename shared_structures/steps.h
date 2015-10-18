@@ -13,7 +13,7 @@ public:
 
 class EndStep : public Step {
 public:
-    Player * winner_;
+    Player *winner_;
 };
 
 #endif // STEPS_H
