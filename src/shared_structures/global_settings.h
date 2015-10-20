@@ -17,7 +17,7 @@ class GlobalSettings : public Structure {
 public:
     GlobalSettings();
     GlobalSettings(char* data_file_name, std::set<Objective*> objectives);
-    GlobalSettings(char* data_file_name);
+    explicit GlobalSettings(char* data_file_name);
 
     std::set<Country*> get_neighbors (Country * country) const;
 

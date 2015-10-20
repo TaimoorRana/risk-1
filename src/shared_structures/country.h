@@ -10,7 +10,7 @@ class Country : public Structure {
 
 public:
 
-    Country(std::string name);
+    explicit Country(std::string name);
 
     static Country* get_country (std::string country_name);
     static Country* get_country (int id);

@@ -21,7 +21,7 @@ public:
 
     GameState();
 
-    GameState(InitialSettings* initial_settings);
+    explicit GameState(InitialSettings* initial_settings);
 
     void set_current_step (Step* new_step);
 

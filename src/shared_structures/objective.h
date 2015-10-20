@@ -15,7 +15,7 @@ public:
 
     int get_id() const;
     std::string get_description() const;
-    bool is_accomplished(GameState* GameState, Player* player) const;
+    bool is_accomplished(GameState* game_state, Player* player) const;
 
 protected:
 
