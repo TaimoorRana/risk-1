@@ -1,4 +1,4 @@
-EngineInitialSettings::EngineInitialSettings(InitialSettings initial_settings) :
+EngineInitialSettings::EngineInitialSettings(InitialSettings &initial_settings) :
 					   InitialSettings(initial_settings) {  
 }
 

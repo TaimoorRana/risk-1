@@ -1,4 +1,4 @@
-PlayerInitialSettings::PlayerInitialSettings(InitialSettings initial_settings) :
+PlayerInitialSettings::PlayerInitialSettings(InitialSettings &initial_settings) :
 					   InitialSettings(initial_settings) {  
 }
 
